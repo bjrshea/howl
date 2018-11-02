@@ -22,7 +22,7 @@ export class SearchComponent  {
   albumIDs: string[] = [];
 
   constructor(private concertService: ConcertService, private spotifyService: SpotifyService, private sanitizer: DomSanitizer) {}
-
+  
   private showSearch = true;
   private showSpin = false;
   private showRewind = false;
@@ -31,9 +31,9 @@ export class SearchComponent  {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-exit() {
-  window.location.reload();
-}
+  exit() {
+    window.location.reload();
+  }
 
   getConcerts() {
     this.showRewind = true;
@@ -44,14 +44,14 @@ exit() {
     this.endDate = (<HTMLInputElement> document.getElementById('endDate')).value;
 
     if(this.startDate != "") {
-    this.startDate = this.startDate + "T10:00:00Z";
-    console.log(this.startDate);
-  }
-   if(this.endDate != "") {
-    this.endDate = this.endDate + "T10:00:00Z";
-    console.log(this.endDate);
-  }
-  
+      this.startDate = this.startDate + "T10:00:00Z";
+      console.log(this.startDate);
+    }
+    if(this.endDate != "") {
+      this.endDate = this.endDate + "T10:00:00Z";
+      console.log(this.endDate);
+    }
+
     const test = this.concertService.onClickMe(this.location, this.artist, this.startDate, this.endDate);
 
     test.then(response => {
