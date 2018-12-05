@@ -1,4 +1,4 @@
-# [Howl](https://howl-music-app.firebaseapp.com/)
+# [Howl](https://howl-concert-app.firebaseapp.com/)
 
 ![howl-logo](https://github.com/Eucile/gig-finder/blob/master/howlreadme.png)
 
