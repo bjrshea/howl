@@ -2,14 +2,9 @@
 
 ![howl-logo](https://github.com/Eucile/gig-finder/blob/master/howlreadme.png)
 
-Never miss out on great live music again. Put in your location and time frame, and Howl returns a dynamic list with music from upcoming shows.
+Never miss out on live music again. Using your location, date range, and/or artist choice, Howl will return a dynamic list of artists and songs from Spotify. Even cooler, you can book a ticket to the show from the app! 
 
-### Prerequisites
-
-You'll need your own API keys for the Ticketmaster API available [here](https://developer.ticketmaster.com/)
-
-
-### Installing
+## Install Instructions
 
 Clone this repo
 
@@ -34,11 +29,18 @@ launch project in your in browser
 ```
 ng serve --open
 ```
-## Languages Used
 
-* TypeScript
+## Troubleshooting
+
+Depending on the network you're using, Spotify songs may not display due to the multiple API calls. To work around this, quickly install this [CORS extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en) from the Google Chrome store.
+
+## Languages & Frameworks Used
+
+* HTML
+* CSS
 * JavaScript
-* HTML/CSS
+* TypeScript
+* Angular
 
 ## Built With
 
